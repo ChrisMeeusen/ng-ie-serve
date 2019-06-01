@@ -18,7 +18,8 @@ If you want to update a project other than the default project pass the --projec
 You should see a success message once the script completes and you should be able to run this command to transpile and serve your project using es5 bundles which
 will work in IE and chrome.
 
-```npm run serve:ie``` if you didn't provide a project name
-```npm run serve:my-ng-project-here:ie``` if you provided a project name
+```npm run start:ie``` if you didn't provide a project name
+
+```npm run start:my-ng-project-here:ie``` if you provided a project name
 
 🦄 🍔
