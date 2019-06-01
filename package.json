@@ -5,6 +5,7 @@
   "scripts": {
     "test": "test"
   },
+  "repository": "https://github.com/ChrisMeeusen/ng-ie-serve",
   "keywords": [
     "ng",
     "ie",
