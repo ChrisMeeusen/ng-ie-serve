@@ -6,7 +6,6 @@ const blUtils = require('./browserslist-utils');
 const es5Utils = require('./es5-utils');
 const argUtils = require('./args-utils');
 
-
 const args = argUtils.getArgs();
 
 let projectName;
