@@ -1,13 +1,17 @@
 const fs = require('fs');
 
+
 module.exports = {
     doesProjectExist: function(projectName) {
         const ng = this.getAngularConfig(projectName);
         return ng.projects[projectName] == true;
     },
     getAngularConfig: function(projectName) {
-        let rawData = fs.readFileSync('angular.json');
+        
+        let ngConf = require('./angular.json');
+        /*let rawData = fs.readFileSync('angular.json');
         let ngConf = JSON.parse(rawData);
+         */
         return ngConf;
     },
     updateAngularConfig: function(projectName) {
