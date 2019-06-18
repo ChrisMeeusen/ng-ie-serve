@@ -7,11 +7,8 @@ module.exports = {
         return ng.projects[projectName] == true;
     },
     getAngularConfig: function(projectName) {
-        
-        let ngConf = require('./angular.json');
-        /*let rawData = fs.readFileSync('angular.json');
+        let rawData = fs.readFileSync('angular.json');
         let ngConf = JSON.parse(rawData);
-         */
         return ngConf;
     },
     updateAngularConfig: function(projectName) {

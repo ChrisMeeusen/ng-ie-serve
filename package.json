@@ -1,7 +1,7 @@
 {
   "name": "ng-ie-serve",
-  "version": "1.0.0",
-  "description": "Script package that enables you to serve your angular cli application in IE8.",
+  "version": "1.0.1",
+  "description": "Script package that enables you to serve your angular cli application in IE.",
   "scripts": {
     "test": "test"
   },
@@ -14,10 +14,8 @@
   ],
   "author": "chris meeusen",
   "license": "ISC",
-  "bin": {
-    "ng-ie-serve": "./src/cli.js"
-  },
+  "bin": { "ng-ie-serve" : "./src/cli.js"},
   "files": [
-    "src"
+    "src/**"
   ]
 }

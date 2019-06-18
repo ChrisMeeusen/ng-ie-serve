@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const fs = require('fs');
+
 const ngUtils = require('./angular-json-utils');
 const pkgUtils = require('./package-json-utils');
 const blUtils = require('./browserslist-utils');

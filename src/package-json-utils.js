@@ -1,5 +1,4 @@
 const fs = require('fs');
-const pkgConfig = require('package.json');
 
 module.exports = {
     addServeNpmScript: function(projectName) {
@@ -19,9 +18,8 @@ module.exports = {
             });
     },
     getPackageConfig: function() {
-        let pkgConf = require('./package.json');
-        /*let rawData = fs.readFileSync('package.json');
-        let pkgConf = JSON.parse(rawData);*/
+        let rawData = fs.readFileSync('package.json');
+        let pkgConf = JSON.parse(rawData);
         return pkgConf;
     }
 }
