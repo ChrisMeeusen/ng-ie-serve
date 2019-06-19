@@ -1,6 +1,6 @@
 {
   "name": "ng-ie-serve",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Script package that enables you to serve your angular cli application in IE.",
   "scripts": {
     "ng-ie-serve": "./bin/cli.js"

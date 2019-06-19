@@ -23,7 +23,7 @@ npx: installed 1 in 2.217s
 *** updated angular.json file... ***
 *** updated package.json file... ***
 *** Success ***
-*** Run "npm run serve:ie" to serve for IE ***
+*** Run "npm run start:ie" to serve for IE ***
 ```
 
 ```npm run start:ie``` if you didn't provide a project name

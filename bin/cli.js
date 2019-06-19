@@ -36,5 +36,5 @@ console.log('*** updated package.json file... ***');
 
 console.log('*** Success ***');
 
-defaultedProject ? console.log('*** Run "npm run serve:ie" to serve for IE ***')
-    : console.log(`*** Run "npm run serve:${projectName}:ie" to serve for IE ***`);
+defaultedProject ? console.log('*** Run "npm run start:ie" to serve for IE ***')
+    : console.log(`*** Run "npm run start:${projectName}:ie" to serve for IE ***`);
