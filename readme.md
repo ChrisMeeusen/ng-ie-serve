@@ -1,22 +1,30 @@
 ## ng-ie-serve
 Ths is a simple nodejs script that will make the necessary changes in an angular project to enable running ```ng serve``` targeting es5 bundles, so 
-you can do local development against Internet Explorer (because we all know that just because it works and looks good in chrome doesn't mean
-IE will be happy).
+you can do local development against Internet Explorer.
 
-To use this script first install it:
+You can install this package globally like so
 
-``` npm i -D ng-ie-serve```
+```npm i -g ng-ie-serve``` then run this from your angular project root directory:  ```ng-ie-serve --project=my-project-here``` (project parameter is optional)
 
-Then execute this command from your angular project's root directory (same directory that contains your package.json file)
+Or you may use this package without installing globally by using ```npx```
 
-```ng-ie-serve```
+```npx ng-ie-serve``` from your angular project root directory.
 
-If you want to update a project other than the default project pass the --project param like so
+**You cannot just install this as a dev dependency as previous versions have stated.  It must be installed globally or used through npx.**
 
-```ng-ie-serve --project=my-ng-project-here```
+If the script ran successfully you'll see this message:
 
-You should see a success message once the script completes and you should be able to run this command to transpile and serve your project using es5 bundles which
-will work in IE and chrome.
+```$xslt
+C:\junk\test-prj>npx ng-ie-serve
+npx: installed 1 in 2.217s
+*** no project name provided using default project: test-prj
+*** updated browerslist file... ***
+*** added tsconfig.es5.json file... ***
+*** updated angular.json file... ***
+*** updated package.json file... ***
+*** Success ***
+*** Run "npm run serve:ie" to serve for IE ***
+```
 
 ```npm run start:ie``` if you didn't provide a project name
 

@@ -1,9 +1,9 @@
 {
   "name": "ng-ie-serve",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Script package that enables you to serve your angular cli application in IE.",
   "scripts": {
-    "test": "test"
+    "ng-ie-serve": "./bin/cli.js"
   },
   "repository": "https://github.com/ChrisMeeusen/ng-ie-serve",
   "keywords": [
@@ -14,8 +14,7 @@
   ],
   "author": "chris meeusen",
   "license": "ISC",
-  "bin": { "ng-ie-serve" : "./src/cli.js"},
-  "files": [
-    "src/**"
-  ]
+  "bin": {
+    "ng-ie-serve": "./bin/cli.js"
+  }
 }
